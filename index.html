@@ -194,31 +194,7 @@
             animation: roll 2s linear infinite;
         }
 
-        .jack-in-the-box {
-            animation: jackInTheBox 2s ease-in-out forwards;
-        }
-
-        .fade-out {
-            animation: fadeOut 2s ease-in-out forwards;
-        }
-
-        .grow-shrink {
-            animation: growShrink 2s ease-in-out forwards;
-        }
-
-        .glow {
-            width: 200px;
-            height: 200px;
-            background-color: #333;
-            border-radius: 10px;
-            animation: glow 1.5s infinite alternate;
-        }
-
-        .glow:hover {
-            animation: glow 1s infinite alternate;
-            box-shadow: 0 0 25px rgba(255, 255, 255, 1);
-            /* Increase glow effect on hover */
-        }
+     
 
         .gallery .animation-box {
             opacity: 0;
@@ -491,74 +467,7 @@
             }
         }
 
-        @keyframes jack-in-the-box {
-            0% {
-                transform: scale(0);
-                opacity: 0;
-                box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
-            }
-
-            50% {
-                transform: scale(1.1);
-                opacity: 1;
-                box-shadow: 0 0 15px rgba(255, 0, 0, 1);
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1;
-                box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
-            }
-        }
-
-
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.5;
-                transform: scale(0.9);
-            }
-
-            100% {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-        }
-
-        @keyframes growShrink {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-
-            50% {
-                transform: scale(1.5);
-                opacity: 0.8;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes glow {
-            0% {
-                box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-            }
-
-            50% {
-                box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-            }
-        }
+        
 
 
         footer p {
@@ -663,22 +572,7 @@
                 <div class="box roll"></div>
                 <p>Roll</p>
             </div>
-            <div class="animation-box">
-                <div class="box roll"></div>
-                <p>Jack In The Box</p>
-            </div>
-            <div class="animation-box">
-                <div class="box roll"></div>
-                <p>Fade Out</p>
-            </div>
-            <div class="animation-box">
-                <div class="box roll"></div>
-                <p>Grow Shrink</p>
-            </div>
-            <div class="animation-box">
-                <div class="box roll"></div>
-                <p>Glow</p>
-            </div>
+            
         </div>
     </main>
 
